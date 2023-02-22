@@ -1,1 +1,21 @@
-
+on: 
+  push:
+    branches: [ Momin_1652 ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python 3.9.1
+      uses: actions/setup-python@v1
+      with:
+        python-version: 3.9.1
+    - name: Install dependencies
+      run: |
+        make install
+    - name: Lint
+      run: |
+        make lint
+    - name: Test
+      run: |
+        make test
