@@ -13,7 +13,7 @@ jobs:
     - name: Install dependencies
       run: |
         make install
-    - name: Lint
+    - name: pylint
       run: |
         make lint
     - name: Test
