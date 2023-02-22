@@ -294,7 +294,7 @@ def get_pitch(y_harmonic, sr, beats):
 
 def get_timbre(y, sr, beats):
     # Mel spectogram
-    S = librosa.feature.melspectrogram(y, sr=sr, n_mels=128)
+    #S = librosa.feature.melspectrogram(y, sr=sr, n_mels=128)
     log_S = librosa.power_to_db(S, ref=np.max)
     # MFCC - Timbre
     mfcc = librosa.feature.mfcc(S=log_S, n_mfcc=13)
@@ -443,9 +443,9 @@ def get_audio_features(file,file_id):
     volume, avg_volume, loudness = get_volume(file)
    
     print('7/8 feature aggregation')
-    intensity_frames = np.matrix(CQT_sync).getT()
-    pitch_frames = np.matrix(C_sync).getT()
-    timbre_frames = np.matrix(M_sync).getT()
+    #intensity_frames = np.matrix(CQT_sync).getT()
+    #pitch_frames = np.matrix(C_sync).getT()
+    #timbre_frames = np.matrix(M_sync).getT()
 
     print('8/8 split stems')
     stemsplit(file, 'htdemucs_6s')
