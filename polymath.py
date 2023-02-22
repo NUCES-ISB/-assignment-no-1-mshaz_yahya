@@ -17,7 +17,7 @@ import crepe
 #import soundfile as sf
 #import pyrubberband as pyrb
 from yt_dlp import YoutubeDL
-from sf_segmenter.segmenter import Segmenter
+#from sf_segmenter.segmenter import Segmenter
 
 ##########################################
 ################ POLYMATH ################
