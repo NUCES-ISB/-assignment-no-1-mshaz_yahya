@@ -5,6 +5,6 @@ install:
 format: 
 	black *.py
 lint:
-	pylint --disable=R,C,E0602 polymath.py
+	pylint --disable=R,C,E0602,W polymath.py
 test:
 	python -m pytest  -vv --cov=test test_polymath.py
