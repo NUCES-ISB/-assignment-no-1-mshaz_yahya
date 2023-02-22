@@ -15,7 +15,7 @@ import numpy as np
 #import librosa
 import crepe
 #import soundfile as sf
-import pyrubberband as pyrb
+#import pyrubberband as pyrb
 from yt_dlp import YoutubeDL
 from sf_segmenter.segmenter import Segmenter
 
