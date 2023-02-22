@@ -15,4 +15,4 @@ black
 pylint
 pytest
 pytest-cov
-sndfile
+click
