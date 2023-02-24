@@ -1,6 +1,6 @@
 on: 
   push:
-    branches: [ Yahya_i191696 ]
+    branches: [ main ]
 jobs:
   build:
     runs-on: ubuntu-latest
