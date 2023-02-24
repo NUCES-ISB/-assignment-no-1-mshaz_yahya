@@ -1,3 +1,4 @@
+name: Momin Build
 on: 
   push:
     branches: [ Momin_1652 ]
