@@ -1,7 +1,7 @@
-name: Momin Build
+
 on: 
   push:
-    branches: [ Momin_1652 ]
+    branches: [ main ]
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -14,7 +14,8 @@ jobs:
     - name: Install dependencies
       run: |
         make install
-    - name: pylint
+
+    - name: lint
       run: |
         make lint
     - name: Test
